@@ -1,0 +1,26 @@
+{*
+margin: 0;
+padding: 0;
+}
+body{
+	background-color: lightyellow;
+}
+p {
+	font-style: italic;
+	font-size: 24px;
+}
+img {
+	width: 300px;
+	height: 300px;
+}
+#image {
+	text-align: center;
+}
+#none, #min, #def, #max {
+	font-size: 16px;
+	font-weight: bold;
+	background-color: #fff;
+	border-color: black;
+	width: 100px;
+	height: 30px;
+}

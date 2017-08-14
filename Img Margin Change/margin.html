@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<p>Change the margin of your image!</p>
+	<button id="none">None</button>
+	<button id="min">Minimum</button>
+	<button id="def">Default</button>
+	<button id="max">Maximum</button>
+	<div id="image"><img src="https://fb-s-c-a.akamaihd.net/h-ak-fbx/v/t1.0-9/11081412_817109175049759_4724880649816232816_n.jpg?oh=80e3c088679ecca54d4441e434e43aed&oe=5A2DD2DA&__gda__=1512703511_c59401ac943e40f015cf423293d1e8ae"></div>
+
+<script type="text/javascript">
+	function changemargin(x) {
+		return function(){
+			return document.getElementById("image").style.margin=x;
+		}
+	}
+	document.getElementById("none").onclick=changemargin("0px");
+	document.getElementById("min").onclick=changemargin("10px");
+	document.getElementById("def").onclick=changemargin("15px");
+	document.getElementById("max").onclick=changemargin("30px");
+</script>
+</body>
+</html>
